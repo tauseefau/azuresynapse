@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "mustafaworkspace"
+		},
+		"mustafalakedata_connectionString": {
+			"value": ""
+		},
+		"mustafaworkspace-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:mustafaworkspace.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"mustafaworkspace-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://tauseef786.dfs.core.windows.net"
+		}
+	}
+}
